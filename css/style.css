@@ -444,9 +444,9 @@ body {
    position:relative;
    font-family: 'Roboto', sans-serif;
    font-weight: lighter;
-   top:2px;
+   top:0.26%;
    font-size: 30px;
-   left:10px;
+   left:0.7%;
  }
 
  .main-heading span{

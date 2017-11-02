@@ -1,16 +1,8 @@
 <!DOCTYPE html>
 <html>
 <!-- //make a copy first and then make the changes to adapt to a template! -->
-
-<!-- //the loading intro box -->
-<div id = "overlay">
-    <div id = "overlay-content">
-      Welcome to DataXLat 1.0!
-    </div>
-  </div>
-
 <!-- //the loading 2 -->
-   <div class = "overlay">
+  <div class = "overlay">
       <div class = "overlay-content">
         <h2 id = "fade-in">Welcome to Data<strong id = x>X</strong>Lat</h2>
         <br>
@@ -48,48 +40,12 @@
           Visit GeoAdaptive
         </a>
       </div>
-
   </div>
 
   <head>
-    <!-- <script src="dist/bundle.js"></script> -->
-    <style>
-		/*html {background: #222222; padding: 40px 200px;font-family: 'Lato', sans-serif;}*/
-		/*h2,p {color: white;}
-		.gitButton{
-			padding:15px 30px;
-			background-color: #47a230;
-			text-decoration: none;
-			font-weight: 900;
-			color: white;
-			text-transform:uppercase;
-			transition: background-color .5s;
-			border: none;
-    		border-radius: 2px;
-		}
-		.gitButton:hover {background-color: #1d7806}
-		.gitButton:visited {color: white;}*/
-	</style>
-
-
   <!-- //try with the leaflet image -->
   <script src="js/leaflet-image.js"></script>
-  <style>
-  /*.ui-button {
-    position:absolute;
-    top:10px;
-    right:10px;
-    z-index:1000;
-  }
 
-  #snapshot {
-    position:absolute;
-    top:0;bottom:0;right:0;
-    width:50%;
-  }*/
-  </style>
-  <!-- <button id='snap' class='ui-button'>Take a snapshot</button> -->
-  <!-- <div id='snapshot'></div> -->
   <script>
 //     var snapshot = document.getElementById('snapshot');
 //
@@ -106,7 +62,6 @@
 //       snapshot.innerHTML = '';
 //       snapshot.appendChild(img);
 //     }
-
 
 
 // THIS IS SO COOL!!! THE MOUSE HEAT MAP
@@ -131,7 +86,7 @@
     <!-- <script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-image/v0.0.4/leaflet-image.js'></script> -->
     <style>
         body { margin:0; padding:0; }
-        #map0 { position:absolute; left:400px; right:0; top:30px; bottom:0; }
+        #map0 { position:absolute; left:29%; right:0; top:3.9%; bottom:0; }
     </style>
 
 
@@ -217,15 +172,15 @@
     <div class = "header">
       <!-- <p class = "header_text"><strong>GEOADAPTIVE &nbsp; </strong></p> -->
     </div>
-    <div style="display: block; over-flow:auto; position: absolute; left: 4px; width: 360px; top: 18px; data-bottom="false" z-index:50;">
+    <div style="display: block; over-flow:auto; position: absolute; left: 0.3%; width: 26%; top: 2.3%; data-bottom="false" z-index:50;">
         <h2 class = "main-heading">DEVELOPMENT <br> EXPLORER <br>
           <span> --- North Triangle </span>
         </h2>
         <br>
         <br>
-        <label class="selectionlabel" for="dest" style="position:relative; left:10px;">Look for a Municipality</label>
+        <label class="selectionlabel" for="dest" style="position:relative; left:0.8%;">Look for a Municipality</label>
         <br>
-        <div class="search" style="display:inline-block;position:relative;left:10px;">
+        <div class="search" style="display:inline-block;position:relative;left:0.8%;">
           <div style="display:inline-block;">
             <div class="option" class="leaflet-bar">
               <select name="basemaps" id="location1" onChange="changeBasemap1(this)">
@@ -299,7 +254,7 @@
             <br>
 
          </div>
-         <div style="display:inline-block; position:relative; over-flow:auto; bottom: -5px; left:-6px; z-index:50;">
+         <div style="display:inline-block; position:relative; over-flow:auto; bottom: -0.65%; left:-0.44%; z-index:50;">
            <button class="btn btn-default dropdown-toggle" type="button" id="showmap" data-toggle="dropdown" aria-haspopup="true">
              Show the Map
            </button>
@@ -311,7 +266,7 @@
         </div>
 
 
-        <div style="position:absolute; over-flow:auto; left:5px;width:390px;top:510px;">
+        <!-- <div style="position:absolute; over-flow:auto; left:0.36%;width:28.5%;top:66.4%;">
           <div id="results" style="display: none;">
             <h5 id = "selection"></h5>
             <h2 id = "sidebar-heading"><span id="LENGTH">City Name</span></h2>
@@ -332,8 +287,7 @@
               Its dataset's ID is <span id="60PCT"><strong>ID</strong></span> and the data was collected in year
               <span id="90PCT"><strong></strong></span>.
             </p>
-
-          </div>
+          </div> -->
 
         </div>
         <br>
@@ -341,7 +295,7 @@
         <br>
         <br>
         <br>
-        <div style = "position:absolute;left:5px;width:390px;top:530px;margin:10px;">
+        <div style = "position:absolute;left:0.36%;width:26%;top:57%;margin:0.74%;">
             <img id = "logo" src="https://preview.ibb.co/i2z8FQ/logo.png">
             <img id = "logoX" src="https://image.ibb.co/f2bS9k/dataX1.jpg">
             <p class = storylink> About the DATA SOURCE &nbsp;
@@ -351,7 +305,7 @@
             </p>
         </div>
     </div>
-    <div id="map" style="position: absolute; right:330px; left: 360px; top:20px; height:98%; z-index:10;"></div>
+    <div id="map" style="position: absolute; right:18%; left: 18%; top:2%; height:98%; z-index:10;"></div>
     <!-- <button class="btn btn-default dropdown-toggle" type="button" id="PrintMap" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
       Print Map
     </button> -->
