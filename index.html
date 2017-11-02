@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-//make a copy first and then make the changes to adapt to a template!
+<!-- //make a copy first and then make the changes to adapt to a template! -->
 
 <!-- //the loading intro box -->
 <div id = "overlay">
@@ -11,9 +11,6 @@
 
 <!-- //the loading 2 -->
    <div class = "overlay">
-    <!-- <div id="shiva">
-      <span class="count">2017</span>
-    </div> -->
       <div class = "overlay-content">
         <h2 id = "fade-in">Welcome to Data<strong id = x>X</strong>Lat</h2>
         <br>
@@ -53,39 +50,6 @@
       </div>
 
   </div>
-
-
-<!-- //LOADING 002 -->
-  <!-- <span class="s1"><div class="splash fade-in">
-  </span>  <h1 class="splash-title fade-in">WELCOME</h1>
-    <a href="#" class="splash-arrow fade-in"><img src="down-arrow.png" alt="" /></a>
-  </div> -->
-  <!-- <div class="wrapper">
-    <header class="cf">
-      <h1><a href="#">Page Title</a></h1>
-      <nav>
-     <ul>
-         <li><a href="#" class="active">Home</a></li>
-         <li><a href="#">About</a></li>
-         <li><a href="#">Work</a></li>
-         <li><a href="#">Contact</a></li>
-      </ul>
-      </nav>
-    </header>
-    <section id="main-content">
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, velit sapiente facere tempora ullam accusamus minus laborum porro odit sequi dolorum enim optio alias at nulla laudantium voluptatibus quibusdam quaerat provident eius quo perferendis voluptatem modi maiores cumque saepe quidem ducimus numquam et commodi cupiditate libero pariatur mollitia eveniet molestias debitis quia! Natus, minima, error, porro facere cum perferendis consequatur necessitatibus id sapiente soluta veritatis magnam quasi ut cumque provident quidem nemo enim nesciunt nihil architecto in obcaecati nobis quam tenetur corrupti. Error, soluta autem consequatur mollitia dolorem sequi iusto dolore fuga facilis esse illum accusamus ratione earum quasi ipsa doloribus odio. Architecto, natus fuga non perferendis veritatis nihil repellat dolorum rerum quidem</p>
-      <br />
-      <hr />
-    </section>
-    <footer>
-      <p>&copy; 2013 - Splash Screen</p>
-    </footer>
-  </div> -->
-
-
-<!--
-  <script src="leaflet-easyPrint-gh-pages/dist/jQuery.print.js"></script>
-  <script src="leaflet-easyPrint-gh-pages/dist/leaflet.easyPrint.js"></script> -->
 
   <head>
     <!-- <script src="dist/bundle.js"></script> -->
@@ -147,7 +111,6 @@
 
 // THIS IS SO COOL!!! THE MOUSE HEAT MAP
 // https://rawgit.com/mapbox/leaflet-image/gh-pages/index.html
-
 
   </script>
 
@@ -296,10 +259,6 @@
 
             <label class="selectionlabel" for="dest">Transportation</label>
             <br>
-            <!-- <input id="nation" class="layers" type="checkbox" name="vehicle" value="Bike">
-            <label class="layerlabel">National Boundary</label><br>
-            <input id="department" class="layers" type="checkbox" name="vehicle" value="Bike">
-            <label class="layerlabel">Departmental Boundary</label><br> -->
             <input id="roads1" class="layers" type="checkbox" name="vehicle" value="Bike">
             <label class="layerlabel">Primary Roads</label><br>
             <input id="roads2" class="layers" type="checkbox" name="vehicle" value="Bike">
@@ -321,7 +280,6 @@
             <label class="layerlabel">Hospitals</label><br>
             <br>
 
-
             <label class="selectionlabel" for="dest">Utilities</label>
             <br>
             <input id="electricity" class="layers" type="checkbox" name="vehicle" value="Bike">
@@ -339,7 +297,7 @@
             <input id="highschool" class="layers" type="checkbox" name="vehicle" value="Bike">
             <label class="layerlabel">High Schools</label><br>
             <br>
-            <!-- <br> -->
+
          </div>
          <div style="display:inline-block; position:relative; over-flow:auto; bottom: -5px; left:-6px; z-index:50;">
            <button class="btn btn-default dropdown-toggle" type="button" id="showmap" data-toggle="dropdown" aria-haspopup="true">
@@ -384,29 +342,25 @@
         <br>
         <br>
         <div style = "position:absolute;left:5px;width:390px;top:530px;margin:10px;">
-          <!-- top:780px for the desktop -->
             <img id = "logo" src="https://preview.ibb.co/i2z8FQ/logo.png">
-            <!-- <img id = "logoX" src="https://preview.ibb.co/iH8w25/dataX.jpg"> -->
             <img id = "logoX" src="https://image.ibb.co/f2bS9k/dataX1.jpg">
             <p class = storylink> About the DATA SOURCE &nbsp;
                <a href="http://geoadaptive.com/home/practices/dataxlat/"target="_blank">
                  <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
                </a>
             </p>
-            <!-- <p> There are over 10 cities in China with population over 10,000,000 in 2017. -->
         </div>
     </div>
     <div id="map" style="position: absolute; right:330px; left: 360px; top:20px; height:98%; z-index:10;"></div>
-    <button class="btn btn-default dropdown-toggle" type="button" id="PrintMap" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <!-- <button class="btn btn-default dropdown-toggle" type="button" id="PrintMap" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
       Print Map
-    </button>
+    </button> -->
       <div class="dropdown1">
         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
           Change Scale
           <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <!-- <li id = "global"><a href="#">Global</a></li> -->
             <li class = "option" id = "Global"><a href="#">Global</a></li>
             <li class = "option" id = "Regional"><a href="#">Regional</a></li>
             <li class = "option" id = "AOI"><a href="#">AOI</a></li>
@@ -429,14 +383,11 @@
           </ul>
       </div>
 
-
-
       <div class="description">
         <div class="chartsarea">
           <canvas class="charts" id="myChart1"></canvas>
           <br>
           <canvas class="charts" id="myChart2"></canvas>
-
 
         </div>
         <!-- <p id = "destext">This box area on the bottom-right is reserved for summary description of the graphs, charts and statistics. <br><br>Please select a municipality first for downloadable PDF and EXCEL table.</p> -->
@@ -476,11 +427,6 @@
         <canvas class="charts" id="myImage1"></canvas>
       </div>
 
-
-
-
-
-
       <!-- <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150"
          id="myImg"
          alt="Image"
@@ -490,9 +436,6 @@
 
 
  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-
-
-
 
 
       <!-- <div id="mapimage">
