@@ -440,6 +440,13 @@ body {
 /*//THE CONTENT PAGE*/
  /*ALL CLASSES*/
  /*1.1 THE MAIN HEADING SECTION*/
+ .sidebar-new{
+   over-flow:auto;
+   position: absolute;
+   left: 0.3%;
+   width: 26%;
+   top: 2.3%;
+ }
  .main-heading{
    position:relative;
    font-family: 'Roboto', sans-serif;
@@ -456,8 +463,15 @@ body {
    font-size:34px;
  }
 
+.search{
+  display:inline-block;
+  position:relative;
+  left:0.8%;
+}
  /*1.2 THE SCALE OR LOCATION SELECTION SECTION*/
  .selectionlabel{
+   position:relative;
+   left:0.8%;
    font-family: 'Roboto', sans-serif;
    font-weight: lighter;
  }
@@ -505,7 +519,16 @@ body {
  }*/
 
  /*1.4 THE DISPLAY CONTROL SECTION*/
- #showmap{
+ .controlbutton{
+   display:inline-block;
+   position:relative;
+   over-flow:auto;
+   bottom: -0.65%;
+   left:-0.44%;
+   z-index:50;
+   }
+
+#showmap{
    font-family: 'Roboto', sans-serif;
    font-weight: lighter;
    margin:10px;
@@ -523,6 +546,14 @@ body {
 
 
 /*1.5 THE LOGO SECTION*/
+.logosection{
+  position:absolute;
+  left:0.36%;
+  width:26%;
+  top:57%;
+  margin:0.74%;
+}
+
 #logo{
   position:relative;
   left:5px;
@@ -550,6 +581,15 @@ body {
 
 
 /*2.1 THE MAPPING SECTION*/
+#map{
+    position: absolute;
+    right:18%;
+    left: 18%;
+    top:2%;
+    height:98%;
+    z-index:10;
+}
+
 .dropdown1{
   position:absolute;
   right: 490px;
