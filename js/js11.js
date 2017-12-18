@@ -91,7 +91,7 @@ var map = L.map('map', {
 var Style = 'light';
 
 
-L.tileLayer('http://{s}.basemaps.cartocdn.com/'+ Style + '_all/{z}/{x}/{y}@2x.png', {
+var Basemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/'+ Style + '_all/{z}/{x}/{y}@2x.png', {
   maxZoom: 18,
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>',
   subdomains: 'abcd'
@@ -108,6 +108,7 @@ L.tileLayer('http://{s}.basemaps.cartocdn.com/'+ Style + '_all/{z}/{x}/{y}@2x.pn
 //       iconSize:[8,10],
 //       iconAnchor:[5,7],
 //     });
+
 
 
 
@@ -178,28 +179,35 @@ L.tileLayer('http://{s}.basemaps.cartocdn.com/'+ Style + '_all/{z}/{x}/{y}@2x.pn
 // L.marker([13.336175, -87.205594]).addTo(map).bindPopup('Barbed wire of iron or steel; twisted hoop or single flat wire, barbed or not, and loosely twisted double wire, of a kind use for fencing Derivados de Metal, S.A. INTREFICA');
 // L.marker([15.513698, -88.007150]).addTo(map).bindPopup('Endless bands for machinery, of stainless steel INTREFICA');
 
-
 //1.2 SWITCH BASEMAPS
-$('#dark').click(function(){
-  $('#map0').hide();
-  $('#map').show();
-  Style = 'dark';
-  L.tileLayer('http://{s}.basemaps.cartocdn.com/'+ Style + '_all/{z}/{x}/{y}@2x.png', {
+var darkmap = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png', {
+  maxZoom: 18,
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>',
+  subdomains: 'abcd'
+}),
+
+  lightmap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png', {
     maxZoom: 18,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>',
     subdomains: 'abcd'
-  }).addTo(map);
+  });
+
+
+$('#dark').click(function(){
+  console.log("dark clicked.");
+    $('#map0').hide();
+    $('#map').show();
+    map.removeLayer(Basemap);
+    map.removeLayer(lightmap);
+    map.addLayer(darkmap);
 });
 
 $('#light').click(function(){
     $('#map0').hide();
     $('#map').show();
-    Style = 'light';
-    L.tileLayer('http://{s}.basemaps.cartocdn.com/'+ Style + '_all/{z}/{x}/{y}@2x.png', {
-      maxZoom: 18,
-      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>',
-      subdomains: 'abcd'
-    }).addTo(map);
+    map.removeLayer(Basemap);
+    map.removeLayer(darkmap);
+    map.addLayer(lightmap);
 });
 
 //1.3 LOAD SATELLITE MAP
